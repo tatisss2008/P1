@@ -84,10 +84,27 @@ function calculadora (x,y)
 
 }
 
+function media ()
+{
+    let f = document.getElementById('f');
+    let g = document.getElementById('g');
+    let h = document.getElementById('h');
+
+
+    let x1 = parseInt(f.value);
+    let y1 = parseInt(g.value);
+    let z1 = parseInt(h.value);
+
+    let promedio  = (x1+y1)/2;
+    console.log("Promedio: "+(promedio));
+    return promedio;
+
+}
+
 let resultado=calcular(5,4);
 let resultado1=calcular_hipotenusa(4,2);
 
-calculadora(5,5);
+calculadora(9,5);
 
 console.log(resultado[0]);
 console.log(resultado[1]);
