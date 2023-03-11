@@ -101,6 +101,32 @@ function media ()
 
 }
 
+
+function calcular_tiempo()
+{
+    let v1 = parseInt(document.getElementById('f').value); 
+    let v2 = parseInt(document.getElementById('g').value); 
+    let d = parseInt(document.getElementById('h').value); 
+
+    let t = d/(v1-v2);
+    let tf = t*60;
+
+    let resultado = document.getElementById("resultado");
+    resultado.value=tf;
+    
+    console.log(tf);
+    return tf;
+    
+}
+
+function calcular_definitiva(p1,p2,p3,e1,t1)
+{
+    
+    let promedio = 0.55*(p1+p2+p3) + 0.3*e1 + 0.15*t1 ;
+    return promedio;
+}
+
+
 let resultado=calcular(5,4);
 let resultado1=calcular_hipotenusa(4,2);
 
