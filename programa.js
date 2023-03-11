@@ -74,10 +74,14 @@ function calcular_hipotenusa(a1,b1)
 
 function calculadora (x,y)
 {
-    document.write("------");
-    document.write(x+y);
+    document.writeln("------");
+    document.writeln(x+y);
+    document.writeln(x-y);
+
 
     console.warn(x+y);
+    console.error(x-y);
+
 }
 
 let resultado=calcular(5,4);
