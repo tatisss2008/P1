@@ -43,8 +43,7 @@ if (a > b)
 // Capturar datos en variables en ambito local
 let nombre;
 nombre = prompt();
-document.write(nombre)
-
+document.writeln("Valor Digitado: "+nombre);
 console.log(nombre);
 
 //constante: Valor que una vez asignado nunca cambia. ambito global
@@ -74,7 +73,7 @@ function calcular_hipotenusa(a1,b1)
 
 function calculadora (x,y)
 {
-    document.writeln("------");
+    document.writeln("<br>---CALCULADORA---</br>");
     document.writeln(x+y);
     document.writeln(x-y);
 
